@@ -1,0 +1,10 @@
+<div class="contract-container">
+    <div class="contract-card" *ngFor="let icon of iconArr ">
+        <fa-icon [icon]="icon.icon" [size]="'2x'"  ></fa-icon>
+        <label class="name">{{icon.label}}</label>
+        <div class="detail">
+            <label *ngFor="let detail of icon.detail">{{detail}}</label>
+        </div>
+
+    </div>
+</div>

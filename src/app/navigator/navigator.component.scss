@@ -1,0 +1,105 @@
+.navigator-container {
+  label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+  }
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  position: relative;
+  padding: 2%;
+  width: 100%;
+  .left-side {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+  .right-side {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+    label {
+      line-height: 1.4;
+      padding: 12px 12px 12px 0;
+      font-size: 12px;
+      font-weight: 400;
+      color: #34343c;
+      background: 0;
+      line-height: 90px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 0 15px;
+      transition-duration: 400ms;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+      font-family: "Pacifico", Arial, sans-serif !important;
+    }
+  }
+  .push {
+    margin-left: auto;
+  }
+  .menu-mobile {
+    position: absolute;
+    right: 0;
+    .menu-boxed {
+      box-sizing: border-box;
+      position: relative;
+      display: block;
+      transform: scale(var(--ggs, 1));
+      width: 18px;
+      height: 18px;
+      border-radius: 3px;
+      border: 2px solid;
+    }
+
+    .menu-boxed::before {
+      content: "";
+      display: block;
+      box-sizing: border-box;
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 3px;
+      top: 2px;
+      left: 2px;
+      box-shadow: 0 4px 0, 0 8px 0;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .navigator-container {
+    flex-direction: column;
+  }
+  .push {
+    margin-left: none;
+  }
+  .mobile{
+    overflow: hidden;
+    padding: 2% 2%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #34343c;
+    transition: max-height 0.2s ease-out;
+
+      &.collapsible{
+        max-height: 100px;
+        border-bottom: 1px solid #34343c;
+        transition: max-height 0.5s ease-in;
+      }
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .menu-mobile {
+    display: none;
+  }
+}

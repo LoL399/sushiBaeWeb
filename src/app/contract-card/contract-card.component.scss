@@ -1,0 +1,102 @@
+.contract-container {
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  .contract-card {
+    width: 400px;
+    min-height: 300px;
+    /* border: 1px solid #000000; */
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    filter: invert(0.3);
+    label {
+      font-size: 18px;
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: inherit;
+      label {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+  }
+
+  .animatedFadeInUp {
+    opacity: 0;
+  }
+
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .contract-container {
+    padding-top: 10%;
+    grid-gap: 10px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .contract-card {
+      width: 40%;
+      justify-content: start;
+      display: flex;
+      min-height: 200px;
+      .name {
+        font-size: 14px !important;
+      }
+      .detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        label {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) {
+}
