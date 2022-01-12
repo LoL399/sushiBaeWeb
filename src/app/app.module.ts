@@ -12,6 +12,7 @@ import { MenuIntroductionComponent } from './component/menu-introduction/menu-in
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { FeatureMenuComponent } from './component/feature-menu/feature-menu.component';
+import { MenuComponent } from './page/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FeatureMenuComponent } from './component/feature-menu/feature-menu.comp
     AboutUsComponent,
     FooterComponent,
     FeatureMenuComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
