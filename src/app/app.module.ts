@@ -13,6 +13,7 @@ import { AboutUsComponent } from './component/about-us/about-us.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { FeatureMenuComponent } from './component/feature-menu/feature-menu.component';
 import { MenuComponent } from './page/menu/menu.component';
+import { DetailComponentComponent } from './component/detail-component/detail-component.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MenuComponent } from './page/menu/menu.component';
     FooterComponent,
     FeatureMenuComponent,
     MenuComponent,
+    DetailComponentComponent,
   ],
   imports: [
     BrowserModule,
