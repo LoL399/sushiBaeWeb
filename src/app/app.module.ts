@@ -14,6 +14,8 @@ import { FooterComponent } from './component/footer/footer.component';
 import { FeatureMenuComponent } from './component/feature-menu/feature-menu.component';
 import { MenuComponent } from './page/menu/menu.component';
 import { DetailComponentComponent } from './component/detail-component/detail-component.component';
+import { HomePageComponent } from './page/home-page/home-page.component';
+import { DetalRowComponent } from './page/detal-row/detal-row.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { DetailComponentComponent } from './component/detail-component/detail-co
     FeatureMenuComponent,
     MenuComponent,
     DetailComponentComponent,
+    HomePageComponent,
+    DetalRowComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 <div class="navigator-container">
-  <div class="left-side">LOGO</div>
+  <div class="left-side">
+    <div class="logo"></div>
+  </div>
   <div class="push"></div>
   <div class="menu-mobile" (click)="menuToggle()">
     <div class="menu-boxed"></div>
@@ -9,7 +11,7 @@
       <label> item </label>
       <label> item </label>
     </div> -->
-  <div [ngClass]="['right-side', 'mobile', !mobileOpen ? '' : 'collapsible' ]">
+  <div [ngClass]="['right-side', 'mobile', !mobileOpen ? '' : 'collapsible']">
     <label> item </label>
     <label> item </label>
     <label> item </label>

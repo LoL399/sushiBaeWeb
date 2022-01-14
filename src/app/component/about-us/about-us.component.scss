@@ -1,0 +1,28 @@
+.detail-container {
+//   height: 200px;
+  display: flex;
+  padding: 2%;
+//   background: #3534347e;
+  width: 100%;
+  margin-bottom: 2%;
+  .detail {
+    width: 100%;
+    background: #ffffff;
+    padding: 2%;
+    .title {
+      font-size: 50px;
+      border-bottom: 2px solid #dddddd;
+    }
+    .about{
+        padding: 1%;
+        font-size: 30px;
+    }
+  }
+  .img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    background-image: url('../../../assets/sushi_chef.jpg');
+  }
+}

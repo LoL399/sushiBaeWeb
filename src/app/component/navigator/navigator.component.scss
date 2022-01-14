@@ -16,6 +16,13 @@
     display: flex;
     justify-self: center;
     align-items: center;
+    .logo {
+      background: url("../../../assets/logo-no-background-1.png");
+      width: 80px;
+      height: 65px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
   .right-side {
     display: flex;
@@ -81,7 +88,7 @@
   .push {
     margin-left: none;
   }
-  .mobile{
+  .mobile {
     overflow: hidden;
     padding: 2% 2%;
     background-color: white;
@@ -90,11 +97,11 @@
     border-bottom: 1px solid #34343c;
     transition: max-height 0.2s ease-out;
 
-      &.collapsible{
-        max-height: 100px;
-        border-bottom: 1px solid #34343c;
-        transition: max-height 0.5s ease-in;
-      }
+    &.collapsible {
+      max-height: 100px;
+      border-bottom: 1px solid #34343c;
+      transition: max-height 0.5s ease-in;
+    }
   }
 }
 
