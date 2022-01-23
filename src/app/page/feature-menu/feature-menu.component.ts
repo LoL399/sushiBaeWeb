@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-feature-menu',
@@ -9,7 +9,9 @@ export class FeatureMenuComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
+
   }
 
 }

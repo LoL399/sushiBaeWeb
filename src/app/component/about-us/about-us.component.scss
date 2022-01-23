@@ -1,8 +1,8 @@
 .detail-container {
-//   height: 200px;
+  //   height: 200px;
   display: flex;
   padding: 2%;
-//   background: #3534347e;
+  //   background: #3534347e;
   width: 100%;
   margin-bottom: 2%;
   .detail {
@@ -13,9 +13,9 @@
       font-size: 50px;
       border-bottom: 2px solid #dddddd;
     }
-    .about{
-        padding: 1%;
-        font-size: 30px;
+    .about {
+      padding: 1%;
+      font-size: 30px;
     }
   }
   .img {
@@ -23,6 +23,37 @@
     background-size: cover;
     background-position: center;
     background-repeat: none;
-    background-image: url('../../../assets/sushi_chef.jpg');
+    background-image: url("../../../assets/sushi_chef.jpg");
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .detail-container {
+    //   height: 200px;
+    display: flex;
+    padding: 2%;
+    //   background: #3534347e;
+    width: 100%;
+    margin-bottom: 2%;
+    .detail {
+      .title {
+        font-size: 25px;
+
+      }
+      .about {
+        padding: 1%;
+        font-size: 15px;
+      }
+    }
+    .img {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .menu-mobile {
+    display: none;
   }
 }

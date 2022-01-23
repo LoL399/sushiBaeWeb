@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,11 +12,12 @@ import { PlateCardComponent } from './component/plate-card/plate-card.component'
 import { MenuIntroductionComponent } from './component/menu-introduction/menu-introduction.component';
 import { AboutUsComponent } from './component/about-us/about-us.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { FeatureMenuComponent } from './component/feature-menu/feature-menu.component';
-import { MenuComponent } from './page/menu/menu.component';
+import { FeatureMenuComponent } from './page/feature-menu/feature-menu.component';
 import { DetailComponentComponent } from './component/detail-component/detail-component.component';
 import { HomePageComponent } from './page/home-page/home-page.component';
 import { DetalRowComponent } from './page/detal-row/detal-row.component';
+import { PhotoComponent } from './page/photo/photo.component';
+import { NotFoundComponent } from './page/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +30,11 @@ import { DetalRowComponent } from './page/detal-row/detal-row.component';
     AboutUsComponent,
     FooterComponent,
     FeatureMenuComponent,
-    MenuComponent,
     DetailComponentComponent,
     HomePageComponent,
     DetalRowComponent,
+    PhotoComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

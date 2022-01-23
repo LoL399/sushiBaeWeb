@@ -1,75 +1,31 @@
-@import url("../../common/animation.scss");
-.plate-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  &:hover {
-    .tag {
-      span {
-        color: lightcoral !important;
-      }
-    }
-  }
-  .banner {
-    display: block;
-    width: 109px;
-    height: 24px;
-    transform: rotate(45deg);
-    position: absolute;
-    text-align: center;
-    line-height: 24px;
-    right: -32px;
-    top: 7px;
-    font-family: arial;
-    font-size: 15px;
-    font-weight: bold;
-    z-index: 1;
-
-    &.offer {
-      background-color: orange;
-    }
-    &.deal {
-      background-color: red;
-      color: white;
-    }
-  }
-  .plate {
-    border-bottom: solid 5px #ddd;
-    background: white;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    box-shadow: 0px 8px 0px rgb(0 0 0 / 10%);
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin: 0 10px;
-    position: relative;
-    &:hover {
-      z-index: 1;
-      box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.411);
-    }
-    &.expand {
-      border-radius: 10px;
-      width: 200px;
-      height: 200px;
-    }
-  }
-  .tag {
-    max-height: 20px;
-    width: inherit;
-    background-color: ivory;
+@import url('../../common/common.scss');
+.plate-container{
+  padding: 10px;
+  border: 2px solid #DE9B72;
+  border-radius: 10px;
+  background-color: #3a3d3e;
+  .plate{
+    height: 200px;
+    width: 200px;
     display: flex;
-    padding: 2%;
-    width: 70%;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: 0px 8px 0px rgb(0 0 0 / 10%);
-    span {
-      font-weight: 300;
+    img{
+      height: inherit;
+      width: inherit;
     }
+  }
+
+  .detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    label{
+      color: #DE9B72;
+    }
+
+
   }
 }
