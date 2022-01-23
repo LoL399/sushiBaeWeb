@@ -18,6 +18,9 @@ import { HomePageComponent } from './page/home-page/home-page.component';
 import { DetalRowComponent } from './page/detal-row/detal-row.component';
 import { PhotoComponent } from './page/photo/photo.component';
 import { NotFoundComponent } from './page/not-found/not-found.component';
+import { ImageSlideComponent } from './component/image-slide/image-slide.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,11 +38,14 @@ import { NotFoundComponent } from './page/not-found/not-found.component';
     DetalRowComponent,
     PhotoComponent,
     NotFoundComponent,
+    ImageSlideComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    IvyCarouselModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

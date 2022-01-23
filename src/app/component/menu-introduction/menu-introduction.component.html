@@ -10,14 +10,13 @@
                 <div class="desk">
                   <label class="title"> Menu </label>
                   <div class="section">
-                    <app-plate-card></app-plate-card>
-                    <app-plate-card></app-plate-card> <app-plate-card></app-plate-card>
-                    <app-plate-card></app-plate-card>
-                    <app-plate-card></app-plate-card> <app-plate-card></app-plate-card>
+                    <ng-container *ngFor="let dish of menu">
+                      <app-plate-card [sushiplate]="dish"></app-plate-card>
+                    </ng-container>
                   </div>
 
                   <div class="section"></div>
-                  <div class="menu-btn"><label> Menu </label></div>
+                  <a class="menu-btn" href="/feature-menu"><label> Menu </label></a>
                 </div>
               </div>
            </div>

@@ -1,0 +1,30 @@
+.image-silde-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  .special {
+    text-align: center;
+    color: #de9b72 !important;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: underline;
+  }
+  .slide {
+    width: 90%;
+    padding: 3px;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image-silde-container {
+    .special {
+      font-size: 18px;
+    }
+    .slide {
+      width: 100%;
+    }
+  }
+}

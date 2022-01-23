@@ -1,25 +1,25 @@
 <div class="menu-container">
   <div class="group-section">
-    <div class="category">
+    <div [ngClass]="{'category': true, 'active': currentMenu === menuList.FEATURE}" (click)="setMenu(menuList.FEATURE)">
       <label>Feature menu</label>
     </div>
-    <div class="category">
+    <div [ngClass]="{'category': true, 'active': currentMenu === menuList.DETAIL}" (click)="setMenu(menuList.DETAIL)">
       <label>Detail menu</label>
     </div>
+    <div [ngClass]="{'category': true, 'active': currentMenu === menuList.COMBO}" (click)="setMenu(menuList.COMBO)">
+        <label>Combo menu</label>
+      </div>
   </div>
   <div class="dish-section">
-    <!-- <app-plate-card></app-plate-card>
-    <app-plate-card></app-plate-card>
-    <app-plate-card></app-plate-card>
-    <app-plate-card></app-plate-card>
-    <app-plate-card></app-plate-card>
-    <app-plate-card></app-plate-card>
-    <app-plate-card></app-plate-card>
-    <app-plate-card></app-plate-card>
-    <app-plate-card></app-plate-card> -->
-    <div class="detail-menu">
-        <img src="../../../assets/menu/suhsi-bae_menu-sept2021-1_page-0001.jpg"/>
-        <img src="../../../assets/menu/suhsi-bae_menu-sept2021-1_page-0002.jpg"/>
-    </div>
+    <ng-container *ngIf="currentMenu !== menuList.DETAIL">
+        <app-plate-card *ngFor="let dish of menu" [sushiplate]="dish"></app-plate-card>
+    </ng-container>
+    <ng-container *ngIf="currentMenu === menuList.DETAIL">
+        <div class="detail-menu">
+            <img src="../../../assets/menu/suhsi-bae_menu-sept2021-1_page-0001.jpg"/>
+            <img src="../../../assets/menu/suhsi-bae_menu-sept2021-1_page-0002.jpg"/>
+        </div>
+    </ng-container>
+
   </div>
 </div>

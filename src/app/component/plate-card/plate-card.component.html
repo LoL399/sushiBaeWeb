@@ -1,9 +1,7 @@
 <div class="plate-container">
-  <div class="plate">
-    <img src="../../../assets/sushi/Taratre-saumon.jpg"/>
-  </div>
+  <div class="plate"><img [src]="src"/></div>
   <div class="detail">
-    <label>Name</label>
-    <label>Price</label>
+    <label>{{ sushiplate.name }}</label>
+    <label>{{ sushiplate.price }}</label>
   </div>
 </div>

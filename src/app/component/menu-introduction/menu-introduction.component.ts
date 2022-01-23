@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { menuArray } from '../../common/menu';
 @Component({
   selector: 'app-menu-introduction',
   templateUrl: './menu-introduction.component.html',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuIntroductionComponent implements OnInit {
   constructor() {}
+  menu = menuArray.slice(0, 5);
   observer: any;
   ngOnInit(): void {
     this.observer = new IntersectionObserver((entries) => {
