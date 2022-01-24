@@ -13,13 +13,13 @@ export class ImageSlideComponent implements OnInit {
   ngOnInit(): void {
     this.images = [
       {
-        path: '../../../assets/special/2x16-mcx.jpg',
+        path: '../../../assets/special/2x16mcx.jpg',
       },
       {
-        path: '../../../assets/special/2x28-mcx.jpg',
+        path: '../../../assets/special/2x28mcx.jpg',
       },
       {
-        path: '../../../assets/special/fuji-roll.jpg',
+        path: '../../../assets/special/fujiroll.jpg',
       },
       {
         path: '../../../assets/special/combo1.jpg',

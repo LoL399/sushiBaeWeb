@@ -19,7 +19,7 @@ import { DetalRowComponent } from './page/detal-row/detal-row.component';
 import { PhotoComponent } from './page/photo/photo.component';
 import { NotFoundComponent } from './page/not-found/not-found.component';
 import { ImageSlideComponent } from './component/image-slide/image-slide.component';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
