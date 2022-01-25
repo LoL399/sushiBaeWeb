@@ -1,5 +1,10 @@
-import { comboArray } from './../../common/menu';
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { comboArray, promotion } from './../../common/menu';
+import {
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  OnInit,
+} from '@angular/core';
 import { menuArray } from 'src/app/common/menu';
 
 @Component({
@@ -8,10 +13,10 @@ import { menuArray } from 'src/app/common/menu';
   styleUrls: ['./feature-menu.component.scss'],
 })
 export class FeatureMenuComponent implements OnInit {
-  constructor() {}
-  currentMenu: Menu = Menu.FEATURE;
+  constructor(private cd: ChangeDetectorRef) {}
+  currentMenu: Menu = Menu.PROMO;
   menuList: any = Menu;
-  menu: any = menuArray;
+  menu: any = promotion;
   images = [
     {
       path: '../../../assets/special/2x16mcx.jpg',
@@ -37,8 +42,6 @@ export class FeatureMenuComponent implements OnInit {
     {
       path: '../../../assets/special/combo3.jpg',
     },
-
-
   ];
   ngOnInit(): void {}
   setMenu(flg: Menu) {
@@ -50,12 +53,15 @@ export class FeatureMenuComponent implements OnInit {
       case Menu.COMBO:
         this.menu = comboArray;
         break;
+      case Menu.PROMO:
+        this.menu = promotion;
+        break;
     }
   }
 }
 
 enum Menu {
   FEATURE,
-  DETAIL,
+  PROMO,
   COMBO,
 }

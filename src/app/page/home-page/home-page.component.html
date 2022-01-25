@@ -1,5 +1,15 @@
 <div class="home-container">
-    <app-paralax-banner></app-paralax-banner>
-    <app-image-slide></app-image-slide>
-    <app-menu-introduction></app-menu-introduction>
+  <app-paralax-banner></app-paralax-banner>
+  <app-image-slide [images]="images"></app-image-slide>
+  <!-- <app-image-slide [label]="'Promotion'" [images]="promotion" [arrow]="false"></app-image-slide> -->
+  <div class="promotion">
+    <label>PROMOTION</label>
+    <div class="plate-container">
+      <app-plate-card
+        *ngFor="let dish of promo"
+        [sushiplate]="dish"
+      ></app-plate-card>
+    </div>
+  </div>
+  <app-menu-introduction></app-menu-introduction>
 </div>

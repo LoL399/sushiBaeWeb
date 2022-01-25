@@ -1,5 +1,24 @@
-.home-container{
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .promotion {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    label {
+      text-align: center;
+      color: #de9b72 !important;
+      font-weight: 700;
+      font-size: 30px;
+      text-decoration: underline;
+    }
+    .plate-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
 }

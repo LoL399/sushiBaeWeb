@@ -1,8 +1,17 @@
 <div class="image-silde-container">
-  <div class="special">Special offer</div>
+  <div class="special">{{ label }}</div>
   <div class="slide">
-    <carousel [images]="images" [autoplay]="true" [autoplayInterval]="2000" [dots]="true" [loop]="true"
-      [transitionDuration]="300" [transitionTimingFunction]="'ease-out'"> </carousel>
+    <carousel
+      [images]="images"
+      [autoplay]="true"
+      [autoplayInterval]="2000"
+      [dots]="true"
+      [loop]="true"
+      [transitionDuration]="300"
+      [transitionTimingFunction]="'ease-out'"
+      [arrows]="arrow"
+    >
+    </carousel>
   </div>
   <!-- <input [(ngModel)]="input"/> -->
 </div>

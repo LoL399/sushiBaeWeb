@@ -1,28 +1,61 @@
 <div class="menu-container">
   <div class="group-section">
-    <div [ngClass]="{'category': true, 'active': currentMenu === menuList.FEATURE}" (click)="setMenu(menuList.FEATURE)">
+    <div
+      [ngClass]="{ category: true, active: currentMenu === menuList.PROMO }"
+      (click)="setMenu(menuList.PROMO)"
+    >
+      <label>Promotion menu</label>
+    </div>
+    <div
+      [ngClass]="{ category: true, active: currentMenu === menuList.FEATURE }"
+      (click)="setMenu(menuList.FEATURE)"
+    >
       <label>Feature menu</label>
     </div>
-    <div [ngClass]="{'category': true, 'active': currentMenu === menuList.DETAIL}" (click)="setMenu(menuList.DETAIL)">
-      <label>Detail menu</label>
+
+    <div
+      [ngClass]="{ category: true, active: currentMenu === menuList.COMBO }"
+      (click)="setMenu(menuList.COMBO)"
+    >
+      <label>Combo menu</label>
     </div>
-    <div [ngClass]="{'category': true, 'active': currentMenu === menuList.COMBO}" (click)="setMenu(menuList.COMBO)">
-        <label>Combo menu</label>
-      </div>
   </div>
   <div class="dish-section">
-    <ng-container *ngIf="currentMenu !== menuList.DETAIL">
-        <app-plate-card *ngFor="let dish of menu" [sushiplate]="dish"></app-plate-card>
-        <!-- experiment -->
-        <carousel [images]="images" [autoplay]="true" [autoplayInterval]="2000" [dots]="true" [loop]="true"
-        [transitionDuration]="300" [transitionTimingFunction]="'ease-out'"> </carousel>
-    </ng-container>
-    <ng-container *ngIf="currentMenu === menuList.DETAIL">
-        <div class="detail-menu">
-            <img src="../../../assets/menu/suhsi-bae_menu-sept2021-1_page-0001.jpg"/>
-            <img src="../../../assets/menu/suhsi-bae_menu-sept2021-1_page-0002.jpg"/>
+    <ng-container>
+      <!-- experiment -->
+      <carousel
+        [autoplay]="true"
+        [autoplayInterval]="2000"
+        [loop]="true"
+        [transitionDuration]="300"
+        [transitionTimingFunction]="'ease-out'"
+        [height]="300"
+        [cellWidth]="230"
+        [cellsToShow]="3"
+        [margin]="0"
+        *ngIf="menu.length > 3"
+      >
+        <div class="carousel-cell" *ngFor="let dish of menu">
+          <app-plate-card [sushiplate]="dish"></app-plate-card>
         </div>
+      </carousel>
+      <ng-container *ngIf="menu.length <= 3">
+        <app-plate-card
+          [sushiplate]="dish"
+          *ngFor="let dish of menu"
+        ></app-plate-card>
+      </ng-container>
     </ng-container>
-
+  </div>
+  <div class="group-section">
+    <div class="category title">
+      <label>Menus de fonctionnalités</label>
+    </div>
+  </div>
+  <div class="dish-section">
+    <div class="detail-menu">
+      <img src="../../../assets/menu/suhsi-bae_menu-sept2021-1_page-0001.jpg" />
+      <img src="../../../assets/menu/suhsi-bae_menu-sept2021-1_page-0002.jpg" />
+    </div>
   </div>
 </div>
