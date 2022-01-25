@@ -13,6 +13,9 @@
   <div class="dish-section">
     <ng-container *ngIf="currentMenu !== menuList.DETAIL">
         <app-plate-card *ngFor="let dish of menu" [sushiplate]="dish"></app-plate-card>
+        <!-- experiment -->
+        <carousel [images]="images" [autoplay]="true" [autoplayInterval]="2000" [dots]="true" [loop]="true"
+        [transitionDuration]="300" [transitionTimingFunction]="'ease-out'"> </carousel>
     </ng-container>
     <ng-container *ngIf="currentMenu === menuList.DETAIL">
         <div class="detail-menu">

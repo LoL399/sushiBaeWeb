@@ -20,9 +20,9 @@
   }
   .img {
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-image: url("../../../assets/sushi_chef.jpg");
   }
 }

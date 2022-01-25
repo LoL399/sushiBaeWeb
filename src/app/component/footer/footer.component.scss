@@ -15,15 +15,28 @@
       color: #de9b72;
     }
     .social-media {
-        width: 20px;
-        height: 20px;
-        background-repeat: no-repeat;
-        cursor: pointer;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      cursor: pointer;
       &.facebook {
         background-image: url("../../../assets/social-media/facebook.png");
       }
       &.instagram {
         background-image: url("../../../assets/social-media/instagram.png");
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .footer {
+    height: 100%;
+    .footer-bottom {
+      gap: 10px;
+      .copy-right {
+        font-size: 12px;
+        text-align: center;
       }
     }
   }

@@ -12,7 +12,34 @@ export class FeatureMenuComponent implements OnInit {
   currentMenu: Menu = Menu.FEATURE;
   menuList: any = Menu;
   menu: any = menuArray;
+  images = [
+    {
+      path: '../../../assets/special/2x16mcx.jpg',
+    },
+    {
+      path: '../../../assets/special/2x28mcx.jpg',
+    },
+    {
+      path: '../../../assets/special/fujiroll.jpg',
+    },
+    {
+      path: '../../../assets/special/combo1.jpg',
+    },
 
+    {
+      path: '../../../assets/special/combo4.jpg',
+    },
+
+    {
+      path: '../../../assets/special/combo2.jpg',
+    },
+
+    {
+      path: '../../../assets/special/combo3.jpg',
+    },
+
+
+  ];
   ngOnInit(): void {}
   setMenu(flg: Menu) {
     this.currentMenu = flg;
