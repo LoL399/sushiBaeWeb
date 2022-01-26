@@ -1,17 +1,12 @@
-<div class="dish-section">
-  <carousel
-    [images]="menu"
-    [autoplay]="true"
-    [autoplayInterval]="1000"
-    [loop]="true"
-    [transitionDuration]="300"
-    [transitionTimingFunction]="'ease-out'"
-    [height]="400"
-    [cellWidth]="600"
-    [margin]="20"
-    [dots]="true"
-  >
-  </carousel>
+<div class="dish-section" id='photos'>
+  <label class="title">Photos</label>
+  <div [ngClass]="{ 'image-gallery': true, expand: expand }">
+    <img class="ani" [src]="item.path" *ngFor="let item of menu" />
+  </div>
+  <div class="collapse blink" (click)="toggle()">
+    <div [ngClass]="[expand ? 'arrow-up' : 'arrow-down']"></div>
+    <label> {{ expand ? "Effondrer" : "Étendre" }}</label>
+  </div>
 </div>
 <!-- <section class="animated-grid">
     <div class="card">a</div>

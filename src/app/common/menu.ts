@@ -15,6 +15,14 @@ export const promotion = [
     name: 'sushi-tower',
     place: 'promo',
   },
+  {
+    name: 'Bento-Chicken-Katsu',
+    place: 'promo',
+  },
+  {
+    name: 'Rouleau-Crevette-Épicé',
+    place: 'promo',
+  },
 ];
 
 export const formatName = (name: any) => {
@@ -36,6 +44,14 @@ export const comboArray = [
   {
     name: 'fujiroll',
     place: 'special',
+  },
+  {
+    name: 'Bento-Chicken-Katsu',
+    place: 'promo',
+  },
+  {
+    name: 'Rouleau-Crevette-Épicé',
+    place: 'promo',
   },
 ];
 
@@ -59,4 +75,29 @@ export const sidemage = [
     name: 'combo3',
     place: 'special',
   },
+  {
+    name: 'combo5',
+    place: 'special',
+  },
+  {
+    name: 'combo6',
+    place: 'special',
+  },
+  {
+    name: 'combo7',
+    place: 'special',
+  },
+  {
+    name: 'shrim',
+    place: 'special',
+  },
+  {
+    name: 'image2',
+    place: 'special',
+  },
 ];
+
+export const nameFormat = (name: any) => {
+  let newName: string = (' ' + name).slice(1);
+  return (newName.charAt(0).toUpperCase() + newName.slice(1)).replace('-',' ');
+};

@@ -9,9 +9,8 @@ import { comboArray, menuArray, promotion } from 'src/app/common/menu';
 })
 export class PhotoComponent implements OnInit {
   constructor() {}
-
   menu: any[] = [];
-
+  expand: boolean = false;
   ngOnInit(): void {
     let temp: any[] = [...promotion, ...menuArray, ...comboArray, ...sidemage];
     for (let item of temp) {
@@ -19,5 +18,9 @@ export class PhotoComponent implements OnInit {
         path: `../../../assets/${item.place || 'sushi'}/${item.name}.jpg`,
       });
     }
+
+  }
+  toggle() {
+    this.expand = !this.expand;
   }
 }

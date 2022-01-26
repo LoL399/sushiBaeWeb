@@ -8,6 +8,7 @@ import { promotion } from 'src/app/common/menu';
 })
 export class HomePageComponent implements OnInit {
   constructor() {}
+  observer: any;
   promo = promotion;
   images = [
     {
@@ -35,5 +36,27 @@ export class HomePageComponent implements OnInit {
       path: '../../../assets/special/combo3.jpg',
     },
   ];
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+    this.observer = new IntersectionObserver((entries) => {
+      // Loop over the entries
+      entries.forEach((entry) => {
+        let cardArr =
+          entry.target?.querySelectorAll('.plate-container') || null;
+        // if (cardArr) {
+        cardArr.forEach((card) => {
+          if (entry.isIntersecting) {
+            card.classList.add('animated');
+            card.classList.add('animatedFadeInUp');
+            card.classList.add('fadeInUp');
+            return;
+          }
+          card.classList.remove('animated');
+          card.classList.remove('animatedFadeInUp');
+          card.classList.remove('fadeInUp');
+        });
+      });
+    });
+    this.observer.observe(document.querySelector('.dish-section'));
+  }
 }

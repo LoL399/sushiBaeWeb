@@ -1,3 +1,4 @@
+import { nameFormat } from './../../common/menu';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -10,8 +11,11 @@ export class PlateCardComponent implements OnInit {
   src: string = '';
   constructor() {}
   observer: any;
+  nameFormat = nameFormat;
   ngOnInit(): void {
-    this.src = `../../../assets/${this.sushiplate?.place || 'sushi'}/${this.sushiplate?.name || ''}.jpg`;
+    this.src = `../../../assets/${this.sushiplate?.place || 'sushi'}/${
+      this.sushiplate?.name || ''
+    }.jpg`;
   }
 }
 

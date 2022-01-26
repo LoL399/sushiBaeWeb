@@ -1,9 +1,11 @@
+@import url('../../common/common.scss');
 .detail-container {
   //   height: 200px;
   display: flex;
   padding: 2%;
   background: #3a3d3e;
   width: 100%;
+  gap: 20px;
   .detail {
     width: 100%;
     padding: 2%;
@@ -24,7 +26,7 @@
   }
   .img {
     width: 100%;
-    background-size: contain;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../../../assets/sushi_chef.jpg");
@@ -54,6 +56,9 @@
     .img {
       width: 100%;
       height: 300px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 }

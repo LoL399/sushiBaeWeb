@@ -8,8 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'home', component: HomePageComponent },
-  { path: 'feature-menu', component: FeatureMenuComponent },
-  { path: 'photos', component: PhotoComponent },
+  // { path: 'feature-menu', component: FeatureMenuComponent },
+  // { path: 'photos', component: PhotoComponent },
   { path: '**', pathMatch: 'full', component: NotFoundComponent },
 ];
 

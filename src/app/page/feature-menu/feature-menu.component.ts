@@ -17,6 +17,7 @@ export class FeatureMenuComponent implements OnInit {
   currentMenu: Menu = Menu.PROMO;
   menuList: any = Menu;
   menu: any = promotion;
+  observer: any;
   images = [
     {
       path: '../../../assets/special/2x16mcx.jpg',
@@ -43,7 +44,9 @@ export class FeatureMenuComponent implements OnInit {
       path: '../../../assets/special/combo3.jpg',
     },
   ];
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
   setMenu(flg: Menu) {
     this.currentMenu = flg;
     switch (flg) {
