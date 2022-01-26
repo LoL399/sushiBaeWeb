@@ -9,6 +9,7 @@
 
 # dependencies
 /node_modules
+/sushi-bae
 
 # profiling files
 chrome-profiler-events*.json

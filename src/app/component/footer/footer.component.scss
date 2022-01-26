@@ -4,26 +4,34 @@
     background: #3a3d3e;
   }
   .footer-bottom {
-    height: 50px;
     background: #2b2b2b;
     display: flex;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     width: 100%;
     gap: 20px;
-    .copy-right {
-      color: #de9b72;
-    }
-    .social-media {
-      width: 20px;
-      height: 20px;
-      background-repeat: no-repeat;
-      cursor: pointer;
-      &.facebook {
-        background-image: url("../../../assets/social-media/facebook.png");
+    flex-direction: column;
+    .section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      .copy-right {
+        color: #de9b72;
       }
-      &.instagram {
-        background-image: url("../../../assets/social-media/instagram.png");
+      .social-media {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        &.facebook {
+          background-image: url("../../../assets/social-media/facebook.png");
+        }
+        &.instagram {
+          background-image: url("../../../assets/social-media/instagram.png");
+        }
       }
     }
   }

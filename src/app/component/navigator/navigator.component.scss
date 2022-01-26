@@ -29,23 +29,25 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-
-    label {
-      cursor: pointer;
-      line-height: 1.4;
-      padding: 12px 12px 12px 0;
-      font-size: 12px;
-      font-weight: 400;
-      color: #34343c;
-      background: 0;
-      line-height: 90px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 0 15px;
-      transition-duration: 400ms;
-      transition-property: all;
-      transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-      font-family: "Pacifico", Arial, sans-serif !important;
+    a {
+      text-decoration: none;
+      label {
+        font-weight: bold;
+        cursor: pointer;
+        line-height: 1.4;
+        padding: 12px 12px 12px 0;
+        font-size: 12px;
+        color: #34343c;
+        background: 0;
+        line-height: 90px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 0 15px;
+        transition-duration: 400ms;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+        font-family: "Pacifico", Arial, sans-serif !important;
+      }
     }
   }
   .push {
@@ -53,7 +55,7 @@
   }
   .menu-mobile {
     position: absolute;
-    right: 0;
+    right: 10px;
     .menu-boxed {
       box-sizing: border-box;
       position: relative;
@@ -95,12 +97,12 @@
     background-color: white;
     max-height: 0;
     overflow: hidden;
-    border-bottom: 1px solid #34343c;
+    // border-bottom: 1px solid #34343c;
     transition: max-height 0.2s ease-out;
 
     &.collapsible {
-      max-height: 100px;
-      border-bottom: 1px solid #34343c;
+      max-height: 1000px;
+      // border-bottom: 1px solid #34343c;
       transition: max-height 0.5s ease-in;
     }
   }

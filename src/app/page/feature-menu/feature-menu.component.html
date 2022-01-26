@@ -23,7 +23,7 @@
   <div class="dish-section">
     <ng-container>
       <!-- experiment -->
-      <carousel
+      <!-- <carousel
         [autoplay]="true"
         [autoplayInterval]="2000"
         [loop]="true"
@@ -31,15 +31,14 @@
         [transitionTimingFunction]="'ease-out'"
         [height]="300"
         [cellWidth]="230"
-        [cellsToShow]="3"
         [margin]="0"
         *ngIf="menu.length > 3"
       >
         <div class="carousel-cell" *ngFor="let dish of menu">
           <app-plate-card [sushiplate]="dish"></app-plate-card>
         </div>
-      </carousel>
-      <ng-container *ngIf="menu.length <= 3">
+      </carousel> -->
+      <ng-container>
         <app-plate-card
           [sushiplate]="dish"
           *ngFor="let dish of menu"

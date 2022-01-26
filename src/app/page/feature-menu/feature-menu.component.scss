@@ -10,10 +10,12 @@
     background: #3a3d3e;
     // background-color: blueviolet;
     border-radius: 10px;
-    border: 3px solid #de9b72;
+    // border: 3px solid #de9b72;
     display: flex;
     gap: 10px;
     padding: 2%;
+    display: flex;
+    justify-content: center;
     .category {
       &.active {
         border: 3px solid #de9b72;
@@ -37,6 +39,7 @@
       label {
         color: #de9b72;
         font-size: 20px;
+        font-weight: bold;
         &:hover{
           cursor: pointer;
         }
@@ -48,14 +51,16 @@
     border-radius: 10px;
     border: 3px solid #de9b72;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: center;
+    // flex-wrap: wrap;
     gap: 40px;
     height: fit-content;
     padding: 24px;
     // max-width: 80%;
     transition: max-width 0.5s ease-out;
     background: #3a3d3e;
+    justify-content: flex-start;
+    overflow: auto;
     .detail-menu {
       display: flex;
       justify-content: center;
@@ -103,7 +108,7 @@
       flex-direction: row;
       padding: 8px;
       gap: 40px;
-      justify-content: space-around;
+      justify-content: flex-start;
     }
     .detail-section {
       display: none;

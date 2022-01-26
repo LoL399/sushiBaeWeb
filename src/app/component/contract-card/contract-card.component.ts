@@ -17,10 +17,10 @@ export class ContractCardComponent implements OnInit {
       icon: faClock,
       label: "Heures d'ouverture",
       detail: [
-        'dimanche: 15h00–22h00',
+        'dimanche: 15h00–21h00',
         'lundi - mardi : 11h00–21h00',
         'mercredi - vendredi: 11h00–22h00',
-        ' samedi: 12h00–22h00',
+        'samedi: 12h00–22h00',
       ],
     },
     {
