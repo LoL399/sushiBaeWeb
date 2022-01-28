@@ -11,6 +11,15 @@
   background-attachment: fixed;
 
   .banner {
+    .logo {
+      background-color: #ffffff;
+      border-radius: 50%;
+      background-image: url("../../../assets/logo.jpg");
+      width: 200px;
+      height: 205px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,8 +58,8 @@
         color: white;
         font-weight: bold;
       }
-      &:hover{
-        box-shadow: 3px 3px 3px 3px #00000065;;
+      &:hover {
+        box-shadow: 3px 3px 3px 3px #00000065;
       }
     }
   }
@@ -83,6 +92,11 @@
   .paralax-container {
     height: 50vh;
     .banner {
+      .logo {
+        margin-top: 2%;
+        width: 80px;
+        height: 85px;
+      }
       .title {
         font-size: 18px !important;
       }

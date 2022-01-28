@@ -8,6 +8,16 @@ export const menuArray = [
 
 export const promotion = [
   {
+    name: '2x16mcx',
+    place: 'special',
+    price: '21.99',
+  },
+  {
+    name: '2x28mcx',
+    place: 'special',
+    price: '41.99',
+  },
+  {
     name: 'pizza-sushi',
     place: 'promo',
   },
@@ -31,31 +41,22 @@ export const formatName = (name: any) => {
 };
 
 export const comboArray = [
+
   {
-    name: '2x16mcx',
-    place: 'special',
-    price: '21.99',
-  },
-  {
-    name: '2x28mcx',
-    place: 'special',
-    price: '41.99',
-  },
-  {
-    name: 'fujiroll',
+    name: 'assiettes-assorties',
     place: 'special',
   },
   {
     name: 'Bento-Chicken-Katsu',
     place: 'promo',
   },
-  {
-    name: 'Rouleau-Crevette-Épicé',
-    place: 'promo',
-  },
 ];
 
 export const sidemage = [
+  {
+    name: 'image',
+    place: 'special',
+  },
   {
     name: 'combo1',
     place: 'special',

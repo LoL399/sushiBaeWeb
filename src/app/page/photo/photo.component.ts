@@ -12,13 +12,12 @@ export class PhotoComponent implements OnInit {
   menu: any[] = [];
   expand: boolean = false;
   ngOnInit(): void {
-    let temp: any[] = [...promotion, ...menuArray, ...comboArray, ...sidemage];
+    let temp: any[] = [...sidemage, ...promotion];
     for (let item of temp) {
       this.menu.push({
         path: `../../../assets/${item.place || 'sushi'}/${item.name}.jpg`,
       });
     }
-
   }
   toggle() {
     this.expand = !this.expand;
