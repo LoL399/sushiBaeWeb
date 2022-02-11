@@ -16,6 +16,7 @@ export const promotion = [
     name: '2x28mcx',
     place: 'special',
     price: '41.99',
+    subInfo: 'tous les lundis et mardis'
   },
   {
     name: 'pizza-sushi',
@@ -41,7 +42,6 @@ export const formatName = (name: any) => {
 };
 
 export const comboArray = [
-
   {
     name: 'assiettes-assorties',
     place: 'special',
@@ -55,6 +55,10 @@ export const comboArray = [
 export const sidemage = [
   {
     name: 'image',
+    place: 'special',
+  },
+  {
+    name: 'fujiroll',
     place: 'special',
   },
   {
@@ -100,5 +104,5 @@ export const sidemage = [
 
 export const nameFormat = (name: any) => {
   let newName: string = (' ' + name).slice(1);
-  return (newName.charAt(0).toUpperCase() + newName.slice(1)).replace('-',' ');
+  return (newName.charAt(0).toUpperCase() + newName.slice(1)).replace('-', ' ');
 };

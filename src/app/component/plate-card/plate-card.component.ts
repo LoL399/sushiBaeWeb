@@ -24,4 +24,5 @@ class Plate {
   public name?: string;
   public price?: string;
   public place?: string;
+  public subInfo?: string;
 }

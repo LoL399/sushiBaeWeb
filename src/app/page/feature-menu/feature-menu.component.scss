@@ -47,10 +47,12 @@
     }
   }
   .dish-section {
+    overflow-y: hidden;
     width: 100%;
     border-radius: 10px;
     border: 3px solid #de9b72;
     display: flex;
+    overflow-y: hidden;
     justify-content: center;
     // flex-wrap: wrap;
     gap: 40px;

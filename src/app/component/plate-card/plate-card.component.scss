@@ -1,33 +1,35 @@
-@import url('../../common/common.scss');
-.plate-container{
+@import url("../../common/common.scss");
+.plate-container {
   padding: 10px;
-  border: 2px solid #DE9B72;
+  border: 2px solid #de9b72;
   border-radius: 10px;
   background-color: #3a3d3e;
+  width: -moz-fit-content;
   width: fit-content;
-  min-height: 270px;
-  .plate{
-    height: 200px;
+  min-height: 259px;
+  .plate {
+    height: -moz-fit-content;
+    height: fit-content;
     width: 200px;
     display: flex;
     justify-content: center;
+    min-height: 300px;
     align-items: center;
-    img{
-      height: inherit;
+    img {
+      height: auto;
       width: inherit;
     }
   }
 
-  .detail{
+  .detail {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 5px;
-    label{
-      color: #DE9B72;
+    height: 95px;
+    label {
+      color: #de9b72;
     }
-
-
   }
 }
