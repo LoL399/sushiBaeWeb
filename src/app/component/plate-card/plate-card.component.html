@@ -1,8 +1,24 @@
-<div class="plate-container animated animatedFadeInUp fadeInUp">
+<!-- <div class="plate-container animated animatedFadeInUp fadeInUp">
   <div class="plate"><img [src]="src"/></div>
   <div class="detail">
     <label>{{ nameFormat(sushiplate.name) }}</label>
-    <label>{{ sushiplate.price }}</label>
-    <label>{{ sushiplate.subInfo }}</label>
+
+
+  </div>
+  <label class="info-tag">{{ sushiplate.subInfo }}</label>
+  <span class="card-price">{{ sushiplate.price ? sushiplate.price  + '$' : ''  }}</span>
+</div> -->
+
+<div class="food-card animated animatedFadeInUp fadeInUp">
+  <div class="image">
+    <img [src]="src"/>
+  </div>
+  <div class="details">
+    <div class="name">{{ nameFormat(sushiplate.name) }}</div>
+    <div class="sub-info">{{ sushiplate.subInfo }}</div>
+    <span class="price">{{ sushiplate.price ? sushiplate.price  + '$' : ''  }}</span>
   </div>
 </div>
+
+
+

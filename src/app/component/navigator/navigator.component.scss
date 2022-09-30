@@ -99,11 +99,11 @@
     overflow: hidden;
     // border-bottom: 1px solid #34343c;
     transition: max-height 0.2s ease-out;
-
     &.collapsible {
       max-height: 1000px;
       // border-bottom: 1px solid #34343c;
       transition: max-height 0.5s ease-in;
+
     }
   }
 }
