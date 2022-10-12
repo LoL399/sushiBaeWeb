@@ -8,7 +8,7 @@ export const menuArray = [
 
 export const promotion = [
   {
-    name: 'Saumon-Katsu-nouveau',
+    name: 'Saumon-Katsu',
     place: 'promo',
     price: '12.95',
   },

@@ -32,7 +32,7 @@ export class ContractCardComponent implements OnInit {
       icon: faCar,
       label: 'Livraison local gratuite',
       detail: [
-        'Pour toutes commande de plus de 20$ av taxes en appelant directement au restaurant',
+        'Pour toutes commande de plus de 25$ av taxes en appelant directement au restaurant',
       ],
     },
     {
