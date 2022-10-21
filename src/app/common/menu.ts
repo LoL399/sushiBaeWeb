@@ -8,6 +8,11 @@ export const menuArray = [
 
 export const promotion = [
   {
+    name: 'Mercredi-Pizza-Sushi',
+    place: 'promo',
+    price: '6.99',
+  },
+  {
     name: 'Saumon-Katsu',
     place: 'promo',
     price: '12.95',
@@ -43,6 +48,7 @@ export const promotion = [
 
 export const formatName = (name: any) => {
   name[0] = name[0].toLocaleUpperCase();
+  console.log( name.replace('-', ' '));
   return name.replace('-', ' ');
 };
 
@@ -107,7 +113,20 @@ export const sidemage = [
   },
 ];
 
-export const nameFormat = (name: any) => {
-  let newName: string = (' ' + name).slice(1);
-  return (newName.charAt(0).toUpperCase() + newName.slice(1)).replace('-', ' ');
+export const nameFormat = (name: string | undefined) => {
+  if(typeof name === 'string'){
+    let newName: string[] = name.split('-');
+    for(let i = 0; i< newName.length; i++){
+      if(i === 0 ) {
+        newName[i] = newName[i].charAt(0).toUpperCase() + newName[i].slice(1);
+      }
+      else {
+        newName[i] =newName[i].charAt(0).toLowerCase() + newName[i].slice(1);
+      }
+
+    }
+    return newName.join(' ');
+  }
+  return '';
+
 };
