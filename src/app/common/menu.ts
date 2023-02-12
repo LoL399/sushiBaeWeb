@@ -25,7 +25,7 @@ export const promotion = [
   {
     name: '2x28mcx',
     place: 'special',
-    price: '44.99',
+    price: '45.99',
     subInfo: 'tous les lundis et mardis'
   },
   {
@@ -39,11 +39,7 @@ export const promotion = [
   {
     name: 'Bento-Chicken-Katsu',
     place: 'promo',
-  },
-  {
-    name: 'Rouleau-Crevette-Épicé',
-    place: 'promo',
-  },
+  }
 ];
 
 export const formatName = (name: any) => {
