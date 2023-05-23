@@ -8,6 +8,11 @@ export const menuArray = [
 
 export const promotion = [
   {
+    name: 'Rouleaux-Impériaux_(2mcx)',
+    place: 'promo',
+    price: '5.95',
+  },
+  {
     name: 'Mercredi-Pizza-Sushi',
     place: 'promo',
     price: '6.99',
