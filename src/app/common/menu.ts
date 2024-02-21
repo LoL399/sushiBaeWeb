@@ -25,12 +25,12 @@ export const promotion = [
   {
     name: '2x16mcx',
     place: 'special',
-    price: '22.95',
+    price: '23.95',
   },
   {
     name: '2x28mcx',
     place: 'special',
-    price: '45.99',
+    price: '47.99',
     subInfo: 'tous les lundis et mardis'
   },
   {
