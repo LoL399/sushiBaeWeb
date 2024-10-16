@@ -10,7 +10,7 @@ export const promotion = [
   {
     name: 'Rouleaux-Impériaux_(2mcx)',
     place: 'promo',
-    price: '5.95',
+    price: '6.45',
   },
   {
     name: 'Mercredi-Pizza-Sushi',
@@ -20,17 +20,17 @@ export const promotion = [
   {
     name: 'Saumon-Katsu',
     place: 'promo',
-    price: '12.95',
+    price: '14.95',
   },
   {
     name: '2x16mcx',
     place: 'special',
-    price: '23.95',
+    price: '24.95',
   },
   {
     name: '2x28mcx',
     place: 'special',
-    price: '47.99',
+    price: '49.99',
     subInfo: 'tous les lundis et mardis'
   },
   {
